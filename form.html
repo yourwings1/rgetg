@@ -1,0 +1,33 @@
+<form class="order_form" id="orderForm">
+  <h2 class="order_form_title">
+    Чтобы сделать заказ, укажите номер телефона
+  </h2>
+
+  <p class="help_text">
+    Мы позвоним вам, чтобы уточнить ваши пожелания
+  </p>
+
+  <div class="order_form_row">
+    <input
+      class="order_input"
+      type="tel"
+      name="phone"
+      placeholder="Введите номер"
+      required
+    >
+
+    <button class="btn" type="submit">
+      Сделать заказ
+    </button>
+  </div>
+
+  <label class="policy">
+    <input type="checkbox" name="policy" required>
+    <span>
+      Я согласен на обработку персональных данных и принимаю
+      <a href="#" id="policyLink">политику конфиденциальности</a>
+    </span>
+  </label>
+
+  <p class="form_message"></p>
+</form>
