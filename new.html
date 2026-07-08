@@ -1,0 +1,71 @@
+<form class="order_form" id="orderForm">
+
+    <div class="mobile_svaz_div">
+
+        <h2 class="order_form_title">
+            Чтобы сделать заказ, укажите номер телефона
+        </h2>
+
+        <p class="help_text help_text_svaz">
+            Мы позвоним вам, чтобы уточнить ваши пожелания
+        </p>
+
+        <div class="order_form_row">
+
+            <!-- Имя (можно скрыть, если не хочешь спрашивать) -->
+            <input
+                class="input_text"
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+            >
+
+            <input
+                class="input_text"
+                type="tel"
+                name="phone"
+                placeholder="Введите номер"
+                required
+            >
+
+            <!-- время заявки -->
+            <input
+                type="hidden"
+                name="time"
+                id="orderTime"
+            >
+
+            <button class="btn order_btn" type="submit">
+                Сделать заказ
+            </button>
+
+        </div>
+
+
+        <label class="mobile_svaz_div3">
+
+            <input 
+                type="checkbox" 
+                name="policy" 
+                required
+            >
+
+            <div class="mobile_svaz_div2">
+
+                <h6 class="help_text help_text_accept">
+                    Я согласен на обработку персональных данных и принимаю
+                    <a href="policy.html" id="policyLink">
+                        политику конфиденциальности
+                    </a>
+                </h6>
+
+            </div>
+
+        </label>
+
+
+        <p class="form_message"></p>
+
+    </div>
+
+</form>
